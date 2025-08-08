@@ -43,7 +43,7 @@
             <div class="card-body">
               {{task.task}}
               <span style="position: relative; float: right">
-                <a class="btn btn-success"
+                <a href="{% url 'mark_as_done' task.id %}" class="btn btn-success"
                   ><i class="fa fa-check"></i> Mark as Done</a
                 >
                 <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
